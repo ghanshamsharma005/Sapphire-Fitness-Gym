@@ -1,1 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sapphireBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" />
+      <stop offset="45%" stop-color="#0066ff" />
+      <stop offset="100%" stop-color="#003cdb" />
+    </linearGradient>
+    <linearGradient id="sapphireGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
 
+  <!-- Shield / Gem Icon -->
+  <g transform="translate(15, 10)">
+    <!-- Outer Shield Crest -->
+    <path d="M50 5 L88 20 L88 62 C88 82 50 96 50 96 C50 96 12 82 12 62 L12 20 Z" 
+          fill="#0c1017" stroke="url(#sapphireBlue)" stroke-width="3.5" />
+    
+    <!-- Inner Gem Facets -->
+    <path d="M50 16 L76 27 L66 54 L50 64 L34 54 L24 27 Z" 
+          fill="url(#sapphireBlue)" opacity="0.25" />
+    <path d="M50 16 L50 64 L34 54 Z" fill="url(#sapphireBlue)" opacity="0.6" />
+    <path d="M50 16 L76 27 L50 64 Z" fill="#00d2ff" opacity="0.85" />
+    <path d="M50 64 L66 54 L50 84 Z" fill="url(#sapphireBlue)" />
+    <path d="M50 64 L34 54 L50 84 Z" fill="#004ad9" />
+
+    <!-- Dumbbell Accent inside shield -->
+    <rect x="36" y="47" width="28" height="5" rx="2.5" fill="#ffffff" filter="url(#glow)" />
+    <rect x="30" y="42" width="6" height="15" rx="2" fill="#ffffff" />
+    <rect x="64" y="42" width="6" height="15" rx="2" fill="#ffffff" />
+    <rect x="25" y="45" width="4" height="9" rx="1.5" fill="#00d2ff" />
+    <rect x="71" y="45" width="4" height="9" rx="1.5" fill="#00d2ff" />
+  </g>
+
+  <!-- Typography -->
+  <!-- "SAPPHIRE" -->
+  <text x="125" y="62" 
+        font-family="'Syne', 'Montserrat', 'Inter', -apple-system, sans-serif" 
+        font-size="44" 
+        font-weight="900" 
+        letter-spacing="5" 
+        fill="#ffffff">
+    SAPPHIRE
+  </text>
+  
+  <!-- "FITNESS GYM" -->
+  <text x="128" y="93" 
+        font-family="'Inter', -apple-system, sans-serif" 
+        font-size="16" 
+        font-weight="700" 
+        letter-spacing="8" 
+        fill="url(#sapphireBlue)">
+    FITNESS GYM
+  </text>
+  
+  <!-- Subtle athletic speed underline -->
+  <rect x="128" y="103" width="70" height="3" rx="1.5" fill="url(#sapphireBlue)" />
+  <rect x="204" y="103" width="16" height="3" rx="1.5" fill="#00d2ff" opacity="0.7" />
+  <circle cx="228" cy="104.5" r="2" fill="#00d2ff" />
+</svg>
